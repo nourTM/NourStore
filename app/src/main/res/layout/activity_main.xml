@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f8f9f8"
+    tools:context=".MainActivity">
+
+    <View
+        android:id="@+id/v"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:background="#FFB6C1"
+        android:minHeight="200dp" />
+    <TextView
+        android:id="@+id/business_name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nour Store"
+        android:textColor="#FFFFDA"
+        android:textSize="24sp"
+        android:fontFamily="casual"
+        android:textStyle="bold"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@drawable/ic_wave"
+        android:layout_below="@id/v"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/items"
+        android:paddingRight="250dp"
+        android:clipToPadding="false"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/business_name"
+        >
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <TextView
+        android:id="@+id/abttitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="24dp"
+        android:text="About Us"
+        android:textStyle="bold"
+        android:fontFamily="casual"
+        android:textColor="#374164"
+        android:textSize="16sp"
+        android:layout_below="@id/items"/>
+    <TextView
+        android:id="@+id/abt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="4dp"
+        android:text="Choose now what you want just with a simple click and we will be there delivering your needs to your home With Nour Store Your Dream Become True"
+        android:textColor="#374164"
+        android:textSize="16sp"
+        android:textAlignment="viewStart"
+        android:gravity="start"
+        android:fontFamily="casual"
+        android:layout_below="@id/abttitle"/>
+
+    <TextView
+        android:id="@+id/cnttitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="24dp"
+        android:text="Contact Us"
+        android:textStyle="bold"
+        android:textColor="#374164"
+        android:textSize="16sp"
+        android:fontFamily="casual"
+        android:layout_below="@id/abt"/>
+    <LinearLayout
+        android:id="@+id/phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="4dp"
+        android:layout_below="@id/cnttitle">
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/phone"
+            android:layout_marginRight="5dp"
+            />
+        <TextView
+            android:id="@+id/contact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+213557987610"
+            android:textColor="#374164"
+            android:textSize="16sp"
+            android:fontFamily="casual"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="4dp"
+        android:layout_below="@id/phone">
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/email"
+            android:layout_marginRight="5dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="nh.bensaadi@esi-sba.dz"
+            android:textColor="#374164"
+            android:textSize="16sp"
+            android:fontFamily="casual"/>
+    </LinearLayout>
+
+
+</RelativeLayout>
